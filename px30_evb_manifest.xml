@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default sync-j="4" revision="master"/>
-
+  <default  revision="master" sync-j="4" />
+  
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
-  <remote fetch="https://githup.com/openembedded" name="meta-oe"/>
-  <remote fetch="https://github.com/rockchip-linux/meta-rockchip.git" name="meta-rockchip"/>
-  <remote fetch="https://github.com/rockchip-linux/meta-rockchip-extra.git" name="meta-rockchip-extra"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="git://github.com/meta-qt5" name="qt5" />
+  <remote fetch="git://github.com/rockchip-linux" name="rockchip"/>
 
-  <project remote="yocto" revsion="warrior" name="poky" path="sources/poky"/>
-  <project remote="yocto" revsion="warrior" name="meta-openemdedded" path="sources/meta-openemdedded"/>
-  <project remote="yocto" revsion="warrior" name="meta-rockchip" path="sources/meta-rockchip"/>
-  <project remote="yocto" revsion="warrior" name="meta-rockchip-extra" path="sources/meta-rockchip-extra"/>
-
+  <project remote="yocto" name="poky" revsion="warrior" path="poky"/>
+  <project remote="oe" name="meta-openembedded" revision="warrior" path="poky/meta-openembedded" />
+  <project remote="qt5" name="meta-qt5" revision="warrior" path="poky/meta-qt5" />
+  <project remote="rockchip" name="meta-rockchip" revsion="yocto-next" path="poky/meta-rockchip"/>
+  <project remote="rockchip" name="meta-rockchip-extra" revsion="master"  path="poky/meta-rockchip-extra"/>
 </manifest>
