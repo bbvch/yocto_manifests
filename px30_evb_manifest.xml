@@ -2,10 +2,10 @@
 <manifest>
   <default  revision="master" sync-j="4" />
   
-  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
-  <remote fetch="git://git.openembedded.org" name="oe"/>
-  <remote fetch="git://github.com/meta-qt5" name="qt5" />
-  <remote fetch="git://github.com/rockchip-linux" name="rockchip"/>
+  <remote fetch="https://git.yoctoproject.org/git" revision="warrior" name="yocto"/>
+  <remote fetch="git://git.openembedded.org" revision="warrior" name="oe"/>
+  <remote fetch="git://github.com/meta-qt5" revision="warrior" name="qt5" />
+  <remote fetch="git://github.com/rockchip-linux" revsion="yocto-next" name="rockchip"/>
 
   <project remote="yocto" name="poky" revsion="warrior" path="poky"/>
   <project remote="oe" name="meta-openembedded" revision="warrior" path="poky/meta-openembedded" />
