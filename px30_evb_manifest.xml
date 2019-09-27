@@ -6,10 +6,11 @@
   <remote fetch="git://git.openembedded.org" revision="warrior" name="oe"/>
   <remote fetch="git://github.com/meta-qt5" revision="warrior" name="qt5" />
   <remote fetch="git://github.com/rockchip-linux" revsion="yocto-next" name="rockchip"/>
+  <remote fetch="git://github.com/messi1" revsion="master" name="rockchip-bsp"/>
 
   <project remote="yocto" name="poky" revsion="warrior" path="poky"/>
   <project remote="oe" name="meta-openembedded" revision="warrior" path="poky/meta-openembedded" />
   <project remote="qt5" name="meta-qt5" revision="warrior" path="poky/meta-qt5" />
   <project remote="rockchip" name="meta-rockchip" revsion="yocto-next" path="poky/meta-rockchip"/>
-  <project remote="rockchip" name="meta-rockchip-extra" revsion="master"  path="poky/meta-rockchip-extra"/>
+  <project remote="rockchip-bsp" name="meta-bsp-px30" revsion="master"  path="poky/meta-bsp-px30"/>
 </manifest>
